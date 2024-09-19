@@ -1,0 +1,29 @@
+@use '../../../../Styles/variables' as *;
+
+.team-member {
+    flex: 0 0 calc(33.33% - 20px);
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+
+    img {
+        border-radius: 50%;
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        margin-bottom: 10px;
+        display: inline-block;
+    }
+
+}
+
+.light-theme .team-member {
+    background-color: $light-theme-color-4;
+    color: $light-theme-primary-color;
+}
+
+.dark-theme .team-member {
+    background-color: $dark-theme-color-5;
+    color: $dark-theme-primary-color;
+}

@@ -1,0 +1,72 @@
+@use '../../../Styles/variables' as *;
+.contact {
+    margin-bottom: 40px;
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea{
+        width: calc(100% - 20px);
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        margin-top: 5px;
+    }
+
+    textarea{
+        resize: vertical;
+    }
+
+    button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        background-color: $button-background-green;
+        color: $button-color;
+
+        &:hover{
+            background-color: $button-hover-lighter-green;
+        }
+    }
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.light-theme .contact-form {
+    background-color: $light-theme-color-5;
+    color: $light-theme-primary-color;
+    border: 1px solid $light-theme-border-color;
+
+    input[type="text"],
+    input[type="email"],
+    textarea{
+        border: 1px solid $light-theme-border-lighter-color;
+    }
+}
+
+
+.dark-theme .contact-form {
+    background-color: $dark-theme-color-3;
+    color: $dark-theme-primary-color;
+    border: 1px solid $dark-theme-border-color;
+
+    input[type="text"],
+    input[type="email"],
+    textarea{
+        background-color: $dark-theme-color-5;
+        color: $dark-theme-primary-color;
+        border: 1px solid $dark-theme-border-lighter-color;
+    }
+}

@@ -1,0 +1,24 @@
+@use '../../../Styles/variables' as *;
+
+.section {
+    padding: 20px 0;
+
+    h2{
+        font-size: 2.5em;
+        margin-bottom: 20px;
+        display: inline-block;
+    }
+
+    .section-content {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+}
+
+.light-theme .section:nth-child(even) {
+    background-color: $light-theme-color-4;
+}
+
+.dark-theme .section:nth-child(even) {
+    background-color:$dark-theme-color-5;
+}

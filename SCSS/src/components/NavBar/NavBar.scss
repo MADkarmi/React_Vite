@@ -1,0 +1,56 @@
+@use '../../Styles/variables' as *;
+
+.navbar {
+    position: sticky;
+    top: 0;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000;
+
+    a {
+        text-decoration: none;
+        padding: 0 20px;
+    }
+
+    .theme-toggle-button {
+        cursor: pointer;
+        padding: 10px 20px;
+        transition: background-color 0.3s ease;
+        border-radius: 5px;
+    }
+}
+
+
+// :gobal(.light-theme) css modules nie nadaje indywidualnych identyfikatorów
+.light-theme .navbar{
+    background-color: $light-theme-color-1;
+    a{
+        color: $light-theme-primary-color;
+    }
+
+    .theme-toggle-button {
+        background-color: $light-theme-primary-color;
+        color: $light-theme-background-color;
+
+        &:hover{
+            background-color: $light-theme-color-2;
+        }
+    }
+}
+
+.dark-theme .navbar{
+    background-color: $dark-theme-color-1;
+
+    a{
+        color: $dark-theme-primary-color;
+    }
+
+    .theme-toggle-button{
+        background-color: $dark-theme-color-2;
+        color: $dark-theme-color-3;
+
+        &:hover{
+            background-color: $dark-theme-color-4;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+@use '../../Styles/variables' as *;
+
+.content-card {
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.light-theme .content-card{
+    background-color: $light-theme-color-3;
+}
+
+.dark-theme .content-card{
+    background-color: $dark-theme-color-3;
+}

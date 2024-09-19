@@ -1,0 +1,7 @@
+@use '../../../Styles/variables' as *;
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
